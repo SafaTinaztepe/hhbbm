@@ -19,7 +19,7 @@ import time
 
 def request_song_info(song_title, artist_name):
     endpoint = 'https://api.genius.com'
-    headers = {'Authorization': 'Bearer ' + 'zF2i3MJqmrSI0cNQB9L35hMvAAmfgvSkrmh4A2UQx8IrHQiTORrgwBkaEF4e2K9B'}
+    headers = {'Authorization': 'Bearer ' + BEARER_TOKEN}
     search_url = endpoint + '/search'
     data = {'q': song_title + ' ' + artist_name}
     response = requests.get(search_url, data=data, headers=headers)
