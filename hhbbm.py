@@ -118,7 +118,7 @@ def run(artist):
 
 
 comprehend = boto3.client('comprehend')
-client_credentials_manager = SpotifyClientCredentials(client_id="817e183d515b4347b9e32487d263a242", client_secret="1734045840e945a1aef748a660caa6b4")
+client_credentials_manager = SpotifyClientCredentials(client_id=CLIENT_ID, client_secret=CLIENT_SECRET)
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 
